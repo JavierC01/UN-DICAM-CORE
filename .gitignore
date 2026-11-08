@@ -1,0 +1,32 @@
+# Entorno virtual (se recrea con: python -m venv .venv && pip install -r requirements.txt)
+.venv/
+venv/
+env/
+
+# Python y cache de numba (*.nbi, *.nbc se guardan en __pycache__)
+__pycache__/
+*.py[cod]
+*.nbi
+*.nbc
+.pytest_cache/
+
+# Resultados de los analisis
+resultados/
+
+# Datos del usuario: videos y archivos de la maquina (pesados o privados); se conservan las carpetas
+videos/*
+!videos/.gitkeep
+cargas/*
+!cargas/.gitkeep
+
+# Configuracion local / secretos
+.env
+
+# Editores
+.vscode/
+.idea/
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
